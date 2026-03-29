@@ -23,3 +23,18 @@ function condicaoRank(getWin){
     }
 }
 
+do{
+    let getWin = prompt.question("Numero de vitorias: ")
+    let getLoss = prompt.question("Numero de derrota: ")
+    let saldoRank = getSaldoRank(getWin, getLoss)
+    let statusRank = condicaoRank(getWin)
+
+    console.log(`O Herói tem de saldo de ${saldoRank} está no nível de ${statusRank}`)
+    let decisaoDeContinuar = prompt.question("Deseja vericar novamente? [S/N]")
+    
+    if(decisaoDeContinuar === "S" || decisaoDeContinuar === "s"){
+        contador++
+    }else{
+        break
+    }
+}while(contador >= 1)
