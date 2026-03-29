@@ -1,4 +1,4 @@
-<h1>Lab Project - Desafio Classificador de nível de Herói</h1>
+<h1>Lab Project - Calculadora de Partidas Rankeadas</h1>
 <p>Desafio proposto no curso de Logica de programação ministrada pelo <a href="https://www.linkedin.com/in/felipeaguiar-exe/">Felipe Aguiar</a>, pela plataforma da <a href="https://www.linkedin.com/school/dio-makethechange/">DIO</a>.</p>
 
 <h2>Descrição do desafio:</h2>
@@ -10,22 +10,32 @@
 - Operadores
 - Laços de repetição
 - Estruturas de decisões
+- Funções
 
 ## Objetivo
 
-Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
+Crie uma função que recebe como parâmetro a quantidade de vitórias e derrotas de um jogador,
+depois disso retorne o resultado para uma variável, o saldo de Rankeadas deve ser feito através do calculo (vitórias - derrotas)
 
-Se XP for menor do que 1.000 = Ferro<br>
-Se XP for entre 1.001 e 2.000 = Bronze<br>
-Se XP for entre 2.001 e 5.000 = Prata<br>
-Se XP for entre 5.001 e 7.000 = Ouro<br>
-Se XP for entre 7.001 e 8.000 = Platina<br>
-Se XP for entre 8.001 e 9.000 = Ascendente<br>
-Se XP for entre 9.001 e 10.000= Imortal<br>
-Se XP for maior ou igual a 10.001 = Radiante<br>
+Se vitórias for menor do que 10 = Ferro <br>
+Se vitórias for entre 11 e 20 = Bronze<br>
+Se vitórias for entre 21 e 50 = Prata<br>
+Se vitórias for entre 51 e 80 = Ouro<br>
+Se vitórias for entre 81 e 90 = Diamante<br>
+Se vitórias for entre 91 e 100= Lendário<br>
+Se vitórias for maior ou igual a 101 = Imortal<br>
+
+### Entrada de Dados:
+
+- Quantidade de vitorias
+- Quantidade de Derrotas
+
+### Functions
+
+- vitorias e derrotas e retorna saldo de (vitória - derrota)
+- condicao com saida de tipo de rankeamento
 
 ## Saída
 
 Ao final deve se exibir uma mensagem:
-
-"O Herói de nome **{nome}** está no nível de **{nivel}**"
+"O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
